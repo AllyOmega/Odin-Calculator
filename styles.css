@@ -30,20 +30,23 @@ body {
 }
 
 
-
-
 button {
+    transition: background-color 0.1s, box-shadow 0.2s 50ms;
     width: 100px;
     height: 100px;
     border-radius: 50% ;
     font-size: 40px;
     border-style: none;
-
+    user-select: none;
     background-color: gray;
 }
 
+button:active {
+    background-color: aqua;
+    /* transition: background-color 0.1s; */
+}
 
-.op-button {
+.op-button, #equal {
     background-color: orange;
     color: white;
 }
